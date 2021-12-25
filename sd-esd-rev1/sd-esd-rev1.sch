@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7560 1200 7370 1200
+Text Label 7370 1200 0    70   ~ 0
+GND
+Wire Wire Line
+	7560 1100 7370 1100
+Text Label 7370 1100 0    70   ~ 0
+12V
+Wire Wire Line
+	7560 900  7370 900 
+$Comp
+L sd-esd-rev1-rescue:CONN_42.54_NOSILK-RS485_Mayfly-eagle-import J7
+U 1 1 74681F62
+P 7760 1000
+F 0 "J7" H 7560 1320 70  0000 L BNN
+F 1 "CONN_42.54_NOSILK" H 7560 710 70  0001 L BNN
+F 2 "RS485_Mayfly:1X04_NOSILK" H 7760 1000 50  0001 C CNN
+F 3 "" H 7760 1000 50  0001 C CNN
+F 4 "110990037 10Pack" H 7760 1000 50  0001 C CNN "MPN"
+F 5 "0.1*1597-1083-ND " H 7760 1000 50  0001 C CNN "Vendor"
+	1    7760 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L sd-esd-rev1-rescue:OSHW-LOGOMINI-RS485_Mayfly-eagle-import LOGO1
+U 1 1 994F8438
+P 10600 6800
+F 0 "LOGO1" H 10600 6800 50  0001 C CNN
+F 1 "OSHW-LOGOMINI" H 10600 6800 50  0001 C CNN
+F 2 "RS485_Mayfly:OSHW-LOGO-MINI" H 10600 6800 50  0001 C CNN
+F 3 "" H 10600 6800 50  0001 C CNN
+F 4 "na" H 10600 6800 50  0001 C CNN "Vendor"
+	1    10600 6800
+	1    0    0    -1  
+$EndComp
+Text Notes 7800 7050 0    98   Italic 0
+<author name>
+Text Notes 7450 7500 0    69   ~ 0
+Mayfly Wingboard <description>
+Text Notes 10600 7650 0    69   ~ 0
+1
+$Comp
+L Device:R R13
+U 1 1 6096D7F6
+P 10700 2350
+F 0 "R13" V 10493 2350 50  0000 C CNN
+F 1 "510R" V 10584 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10630 2350 50  0001 C CNN
+F 3 "~" H 10700 2350 50  0001 C CNN
+F 4 "RC1206FR-07510RL" V 10700 2350 50  0001 C CNN "MPN"
+F 5 "311-510FRCT-ND" V 10700 2350 50  0001 C CNN "Vendor"
+	1    10700 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6097A77D
+P 10300 2900
+F 0 "R10" V 10300 2900 50  0000 C CNN
+F 1 "200K" V 10184 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10230 2900 50  0001 C CNN
+F 3 "~" H 10300 2900 50  0001 C CNN
+F 4 "RC0603FR-07200KL" V 10300 2900 50  0001 C CNN "MPN"
+F 5 "311-200KHRCT-ND" V 10300 2900 50  0001 C CNN "Vendor"
+	1    10300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 6098D6CD
+P 10700 3400
+F 0 "R14" V 10493 3400 50  0000 C CNN
+F 1 "510R" V 10584 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10630 3400 50  0001 C CNN
+F 3 "~" H 10700 3400 50  0001 C CNN
+F 4 "RC1206FR-07510RL" V 10700 3400 50  0001 C CNN "MPN"
+F 5 "311-510FRCT-ND" V 10700 3400 50  0001 C CNN "Vendor"
+	1    10700 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 60991BF9
+P 10400 2600
+F 0 "C8" V 10350 2400 50  0000 L CNN
+F 1 "3300pF" V 10450 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10438 2450 50  0001 C CNN
+F 3 "~" H 10400 2600 50  0001 C CNN
+F 4 "C0603X7R500-332KNE" V 10400 2600 50  0001 C CNN "MPN"
+F 5 "2679-C0603X7R500-332KNETR-ND" V 10400 2600 50  0001 C CNN "Vendor"
+	1    10400 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L sd-esd-rev1-rescue:MMSZ5231B-7-F-dk_Diodes-Zener-Single Z1
+U 1 1 6099F44F
+P 10350 3200
+F 0 "Z1" H 10200 3250 60  0000 C CNN
+F 1 "7.5V" H 10150 3100 60  0000 C CNN
+F 2 "digikey-footprints:SOD-123" H 10550 3400 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 10550 3500 60  0001 L CNN
+F 4 "MMSZ5236B-FDICT-ND" H 10550 3600 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMSZ5236B-7-F" H 10550 3700 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 10550 3800 60  0001 L CNN "Category"
+F 7 "Diodes - Zener - Single" H 10550 3900 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 10550 4000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMSZ5231B-7-F/MMSZ5231B-FDICT-ND/755506" H 10550 4100 60  0001 L CNN "DK_Detail_Page"
+F 10 "DIODE ZENER 5.1V 500MW SOD123" H 10550 4200 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 10550 4300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10550 4400 60  0001 L CNN "Status"
+	1    10350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 2500 10700 2600
+Wire Wire Line
+	10550 2600 10700 2600
+Connection ~ 10700 2600
+Wire Wire Line
+	10700 2600 10700 2900
+Wire Wire Line
+	10450 2900 10700 2900
+Connection ~ 10700 2900
+Wire Wire Line
+	10550 3200 10700 3200
+Wire Wire Line
+	10700 2900 10700 3200
+Connection ~ 10700 3200
+Wire Wire Line
+	10700 3200 10700 3250
+Wire Wire Line
+	9850 3200 10150 3200
+Wire Wire Line
+	10150 2900 9850 2900
+Connection ~ 9850 2900
+Wire Wire Line
+	9850 2900 9850 3200
+Wire Wire Line
+	10250 2600 9850 2600
+Wire Wire Line
+	9850 2600 9850 2900
+$Comp
+L Device:R R15
+U 1 1 60CF1556
+P 10700 4100
+F 0 "R15" V 10700 4100 50  0000 C CNN
+F 1 "zero" V 10584 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10630 4100 50  0001 C CNN
+F 3 "~" H 10700 4100 50  0001 C CNN
+F 4 "RC0603FR-070RL" V 10700 4100 50  0001 C CNN "MPN"
+F 5 "311-0.0HRCT-ND" V 10700 4100 50  0001 C CNN "Vendor"
+	1    10700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 4250 10700 4500
+Wire Notes Line
+	9200 2100 11100 2100
+Wire Notes Line
+	8950 3650 8950 2100
+Wire Notes Line
+	8950 2100 9150 2100
+Text Notes 9050 2450 0    98   Italic 0
+ESD/Surge\nModerator
+Wire Notes Line
+	11100 2100 11100 5000
+Wire Notes Line
+	8550 3650 11100 3650
+Text Label 7370 900  0    70   ~ 0
+A+
+Text Label 7350 1000 0    70   ~ 0
+B-
+Wire Wire Line
+	7350 1000 7560 1000
+Wire Wire Line
+	10700 2200 10700 1850
+Wire Wire Line
+	9900 1850 10700 1850
+Text Label 9700 2900 2    70   ~ 0
+GND
+Wire Wire Line
+	9850 2900 9700 2900
+Wire Wire Line
+	7700 3150 7700 3300
+Wire Wire Line
+	7950 3150 7700 3150
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 6017A9BE
+P 8150 3150
+F 0 "J10" H 8230 3142 50  0000 L CNN
+F 1 "2mm jumper" H 8230 3051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 8150 3150 50  0001 C CNN
+F 3 "~" H 8150 3150 50  0001 C CNN
+F 4 "NRPN012PAEN-RC" H 8150 3150 50  0001 C CNN "MPN"
+F 5 "S5801-01-ND" H 8150 3150 50  0001 C CNN "Vendor"
+	1    8150 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 3150
+Wire Wire Line
+	7700 2950 7700 3150
+Wire Wire Line
+	9900 700  10150 700 
+Wire Wire Line
+	9900 1250 9900 1850
+Wire Wire Line
+	9900 1250 9900 700 
+Connection ~ 9900 1250
+Wire Wire Line
+	10000 1250 9900 1250
+Wire Wire Line
+	10000 1350 9800 1350
+$Comp
+L power:+12V #PWR0114
+U 1 1 6092DDD2
+P 10000 1450
+F 0 "#PWR0114" H 10000 1300 50  0001 C CNN
+F 1 "+12V" H 10015 1623 50  0000 C CNN
+F 2 "" H 10000 1450 50  0001 C CNN
+F 3 "" H 10000 1450 50  0001 C CNN
+	1    10000 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 800  9850 800 
+Text Label 9850 800  2    70   ~ 0
+GND
+$Comp
+L power:+12V #PWR0104
+U 1 1 608EF0FF
+P 10150 900
+F 0 "#PWR0104" H 10150 750 50  0001 C CNN
+F 1 "+12V" H 10165 1073 50  0000 C CNN
+F 2 "" H 10150 900 50  0001 C CNN
+F 3 "" H 10150 900 50  0001 C CNN
+	1    10150 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L sd-esd-rev1-rescue:OSTTC030162-dk_Terminal-Blocks-Wire-to-Board J11
+U 1 1 6081395E
+P 10350 700
+F 0 "J11" V 10399 622 50  0000 R CNN
+F 1 "WireTerm" V 10490 622 50  0000 R CNN
+F 2 "digikey-footprints:PinHeader_1x3_P2.54mm_Drill1.02mm" H 10550 900 60  0001 L CNN
+F 3 "http://www.on-shore.com" H 10550 1000 60  0001 L CNN
+F 4 "ED10562-ND" H 10550 1100 60  0001 L CNN "Digi-Key_PN"
+F 5 "OSTTC030162" H 10550 1200 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 10550 1300 60  0001 L CNN "Category"
+F 7 "Terminal Blocks - Wire to Board" H 10550 1400 60  0001 L CNN "Family"
+F 8 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 10550 1500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-shore-technology-inc/OSTTC030162/ED2601-ND/614550" H 10550 1600 60  0001 L CNN "DK_Detail_Page"
+F 10 "TERM BLK 3P SIDE ENT 2.54MM PCB" H 10550 1700 60  0001 L CNN "Description"
+F 11 "On Shore Technology Inc." H 10550 1800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10550 1900 60  0001 L CNN "Status"
+	1    10350 700 
+	0    -1   1    0   
+$EndComp
+Text Label 9800 1350 2    70   ~ 0
+GND
+$Comp
+L S3B-PH-K-S_LF__SN_:S3B-PH-K-S(LF)(SN) J12
+U 1 1 6083367A
+P 10400 1350
+F 0 "J12" H 10630 1396 50  0000 L CNN
+F 1 "S3B-PH-K-S(LF)(SN)" H 10200 1050 50  0000 L CNN
+F 2 "JST_S3B-PH-K-S(LF)(SN)" H 10400 1350 50  0001 L BNN
+F 3 "" H 10400 1350 50  0001 L BNN
+F 4 "" H 10400 1350 50  0001 L BNN "PARTREV"
+F 5 "4.8mm" H 10400 1350 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "JST Sales" H 10400 1350 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 10400 1350 50  0001 L BNN "STANDARD"
+F 8 "S3B-PH-K-S(LF)(SN)" H 10400 1350 50  0001 C CNN "MPN"
+	1    10400 1350
+	1    0    0    -1  
+$EndComp
+Text Label 3900 2450 0    70   ~ 0
+TXp
+Text Label 4800 3250 0    70   ~ 0
+3Vsw
+Text Label 4760 2550 0    70   ~ 0
+RXp
+$Comp
+L sd-esd-rev1-rescue:CONN_10X2-RS485_Mayfly-eagle-import J4
+U 1 1 FA7CA15B
+P 4400 2750
+F 0 "J4" H 4250 3270 70  0000 L BNN
+F 1 "CONN_10X2" H 4250 2060 70  0001 L BNN
+F 2 "RS485_Mayfly:2X10" H 4400 2750 50  0001 C CNN
+F 3 "" H 4400 2750 50  0001 C CNN
+F 4 "67996-220HLF" H 4400 2750 50  0001 C CNN "MPN"
+F 5 "609-3214-ND" H 4400 2750 50  0001 C CNN "Vendor"
+	1    4400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3250 5050 3250
+Wire Wire Line
+	5050 3250 5050 3350
+Text Label 5250 3300 2    50   ~ 0
+TXb
+Text Label 5250 3200 2    50   ~ 0
+RXb
+Text Label 4700 3050 0    50   ~ 0
+SDA
+Text Label 4100 3050 2    50   ~ 0
+SCL
+Wire Wire Line
+	4100 2350 4100 2300
+Wire Wire Line
+	4100 2300 4050 2300
+Text Label 3900 3250 0    70   ~ 0
+5Vsw
+Wire Wire Line
+	4100 3250 3900 3250
+Text Label 4700 2350 0    50   ~ 0
+3Von
+$Comp
+L power:GND #PWR0106
+U 1 1 5FBE5750
+P 4050 2300
+F 0 "#PWR0106" H 4050 2050 50  0001 C CNN
+F 1 "GND" V 4055 2172 50  0000 R CNN
+F 2 "" H 4050 2300 50  0001 C CNN
+F 3 "" H 4050 2300 50  0001 C CNN
+	1    4050 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3350 5050 3350
+Text Label 5200 2450 2    50   ~ 0
+RXp
+Wire Wire Line
+	3800 2450 4100 2450
+Wire Wire Line
+	5100 2550 5100 2450
+Wire Wire Line
+	5100 2450 5200 2450
+Wire Wire Line
+	4700 2550 5100 2550
+Text Label 4700 2450 0    50   ~ 0
+D4_AL
+Text Label 4100 2850 2    50   ~ 0
+LEDB
+Text Label 4100 2550 2    50   ~ 0
+sdiProt
+Text Notes 3700 2400 3    50   ~ 0
+Pin# 9 7 5
+Wire Wire Line
+	10700 3550 10700 3950
+$EndSCHEMATC
