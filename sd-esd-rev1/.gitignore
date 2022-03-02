@@ -1,6 +1,8 @@
 # export files for BOM
-*.csv
+#*.csv
 *.tsv
 *.xml
 # backup files
  *.bak
+ *.zip
+sd-esd-rev1/sd-esd-rev1-backups/*
